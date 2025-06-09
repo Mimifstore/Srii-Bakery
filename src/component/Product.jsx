@@ -4,7 +4,7 @@ import axios from 'axios';
 const Product = () => {
     const [products, setProducts] = useState([]);
 
-    const API_KEY = 'moNqZbnrsbMmIWai1ZirVznAz6SZWfIXvyqYV1xtwUCVJQuNB7ArglWq'; 
+    const API_KEY = import.meta.env.VITE_PEXELS_API_KEY;
     useEffect(() => {
         getBakeryImages();
     }, []);
